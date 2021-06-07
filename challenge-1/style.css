@@ -1,12 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ---------- GLOBALS ---------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 img {
   width: 100%;
 }
+
+/* ---------- CARDS ---------- */
 
 .container {
   background-color: #f4f4f4;
@@ -14,6 +24,22 @@ img {
 }
 
 .card {
-  background-color: blueviolet;
+  background-color: #fff;
   margin: 1rem 1.5rem;
+  color: #747474;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-subtitle {
+  color: #c4c4c4;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-description {
+  margin-top: 1rem;
 }

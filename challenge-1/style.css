@@ -20,10 +20,25 @@ a {
   color: #3ebff3;
 }
 
+/* ---------- HELPERS ---------- */
+.p-1 {
+  padding: 1rem;
+}
+
+.text-secondary {
+  color: #c4c4c4;
+}
+
+.font-sm {
+  font-size: small;
+}
+
 /* ---------- CARDS ---------- */
 .container {
   background-color: #f4f4f4;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
 }
 
 .card {
@@ -35,12 +50,9 @@ a {
   overflow: hidden;
 }
 
-.card-subtitle {
-  color: #c4c4c4;
-}
-
-.card-body {
-  padding: 1rem;
+.card-header {
+  display: flex;
+  align-items: center;
 }
 
 .card-description {
@@ -72,4 +84,13 @@ a {
   width: 1.25rem;
   height: 1.25rem;
   margin: 0 0.5rem;
+}
+
+.profile-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.profile-title {
+  margin-left: 1rem;
 }

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.card {
+  background-color: blueviolet;
+  margin: 1rem 1.5rem;
+}

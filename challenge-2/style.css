@@ -107,6 +107,9 @@ button {
   align-items: center;
 }
 
+.hidden {
+  display: none !important;
+}
 /* ---------- PRICING ---------- */
 .pricing-title {
   margin: 7.5rem 0 2rem;
@@ -192,4 +195,29 @@ button {
 
 .faq-item-title {
   margin-bottom: 0.5rem;
+}
+
+/* ---------- MODAL ---------- */
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .card {
+  margin: 0;
+  border-radius: 5px;
+}
+
+.modal-body {
+  max-width: 36rem;
+  position: relative;
+}
+.modal-description {
+  margin: 2rem 0;
 }

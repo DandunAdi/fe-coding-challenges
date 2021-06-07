@@ -7,17 +7,13 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: "Poppins", sans-serif;
 }
 
 img {
   width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #3ebff3;
 }
 
 /* ---------- HELPERS ---------- */
@@ -31,6 +27,21 @@ a {
 
 .font-sm {
   font-size: small;
+}
+
+.font-md {
+  font-size: medium;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: #3ebff3;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* ---------- CARDS ---------- */
@@ -66,7 +77,7 @@ a {
   margin: 1rem;
 }
 
-.card-footer a:not(:first-child) {
+.card-footer .btn:not(:first-child) {
   margin-left: 1rem;
 }
 
@@ -93,4 +104,30 @@ a {
 }
 .profile-title {
   margin-left: 1rem;
+}
+
+/* ---------- MODAL ---------- */
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  max-width: 36rem;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  width: 1rem;
+  height: 1rem;
 }

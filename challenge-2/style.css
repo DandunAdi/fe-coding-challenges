@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap");
 
 /* ---------- GLOBALS ---------- */
+:root {
+  --primary-color: #0097ec;
+  --secondary-color: #c6c6c6;
+  --dark-gray: #3c4154;
+  --body-bg-color: #f5f5f5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +16,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
-  color: #3c4154;
+  background-color: var(--body-bg-color);
+  color: var(--dark-gray);
 }
 
 ul {
@@ -32,7 +39,7 @@ button {
 }
 
 .text-secondary {
-  color: #c6c6c6;
+  color: var(--secondary-color);
 }
 
 .font-lead {
@@ -71,7 +78,7 @@ button {
 }
 
 .btn-primary {
-  background-color: #0097ec;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -82,7 +89,7 @@ button {
 }
 
 .card-header {
-  background-color: #3c4154;
+  background-color: var(--dark-gray);
   padding: 1rem 2rem;
 }
 
@@ -92,10 +99,6 @@ button {
 
 .shadow {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.6);
-}
-
-.shadow-lg {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .flex-between {
@@ -150,6 +153,27 @@ button {
 .pricing-btn {
   margin: 2.5rem auto 0;
   display: block;
+}
+
+.pricing .card {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.pricing .card-header {
+  transition: all 200ms ease-in-out;
+}
+
+.pricing .card:hover {
+  transform: scale(1.025);
+}
+
+.pricing .card.active {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+.pricing .card.active .card-header {
+  background-color: #0097ec;
 }
 
 /* ---------- FAQ ---------- */

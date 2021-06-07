@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* ---------- GLOBALS ---------- */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +15,12 @@ img {
   width: 100%;
 }
 
-/* ---------- CARDS ---------- */
+a {
+  text-decoration: none;
+  color: #3ebff3;
+}
 
+/* ---------- CARDS ---------- */
 .container {
   background-color: #f4f4f4;
   display: flex;
@@ -42,4 +45,31 @@ img {
 
 .card-description {
   margin-top: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-footer a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.arrow-down {
+  width: 1rem;
+}
+
+.action-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.action-logo {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 0.5rem;
 }

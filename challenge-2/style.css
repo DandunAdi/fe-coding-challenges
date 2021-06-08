@@ -221,3 +221,14 @@ button {
 .modal-description {
   margin: 2rem 0;
 }
+
+@media (max-width: 64rem) {
+  .pricing-table,
+  .faq-body {
+    flex-direction: column;
+  }
+  .pricing .card {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
